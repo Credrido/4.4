@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:_4._4.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="_4._4.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="_4._4">
+
+            <Grid RowDefinitions = "auto, *" ColumnDefinitions = "*, 200">
+        <Border BorderThickness="1" BorderBrush="Black" Grid.ColumnSpan="2">
+            <DockPanel Grid.ColumnSpan="2">
+                <TextBlock Margin="5 0 0 0">Home</TextBlock>
+                <TextBlock Margin = "10 0 0 0">About</TextBlock>
+                <TextBlock Margin = "10 0 0 0">Blog's Main Topic 1</TextBlock>
+                <TextBlock Margin = "10 0 0 0">Blog's Main Topic 2</TextBlock>
+                <TextBlock Margin = "10 0 0 0">Blog's Main Topic 3</TextBlock>
+                <TextBlock Margin = "10 0 0 0">Associated blogs</TextBlock>
+                <TextBlock Margin="0 0 20 0" DockPanel.Dock="Right" TextAlignment="Right">RSS</TextBlock>
+            </DockPanel>
+        </Border>
+        <StackPanel Grid.Row = "1" Grid.Column = "0" Margin="5 10 30 0">
+            <TextBlock>Article 1</TextBlock>
+            <TextBlock TextWrapping = "Wrap" Margin = "0 10 0 0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et augue a turpis aliquet consequat. Maecenas pretium, tortor eu euismod dapibus, orci lacus maximus felis, non facilisis tellus lectus vitae nunc. Nulla suscipit magna vitae porttitor accumsan. Nunc eleifend libero nec blandit ullamcorper. Donec posuere nunc id risus accumsan porttitor. Etiam vel sodales odio, ac commodo enim. Curabitur at augue orci. Maecenas interdum interdum consectetur.
+
+                Suspendisse potenti. Aliquam sed commodo nisi. Nullam varius interdum elit vitae volutpat. Cras pulvinar id massa at tristique. Etiam euismod aliquet lacus ut egestas. Morbi felis mi, pharetra ac facilisis vel, laoreet at tortor. Praesent sollicitudin nulla nec consectetur hendrerit. Nam facilisis magna in ante scelerisque, ac tincidunt lacus hendrerit. Duis consectetur interdum pellentesque. Sed at venenatis eros. Donec metus dui, pellentesque vel dui at, commodo lobortis justo. Cras interdum dapibus tristique. Praesent eu dolor in risus feugiat consequat fermentum quis velit. Nunc id lectus vitae arcu sodales porta vehicula sit amet enim. Etiam erat est, aliquet ultricies blandit sit amet, accumsan nec lacus. Proin at dapibus sem, nec ultricies ligula. Aliquam vel nisi ac sem maximus rhoncus laoreet ac nunc. Pellentesque ante nulla, efficitur a feugiat eget, pellentesque sit amet ante. Sed scelerisque auctor ipsum in sodales. Proin lectus turpis, efficitur eget dolor non, suscipit varius mauris. Proin pretium tincidunt luctus. Sed dolor urna, faucibus sit amet sollicitudin ut, gravida hendrerit risus. Vestibulum congue erat quis leo commodo eleifend. Vestibulum ut ante a neque imperdiet tempus. Proin tincidunt magna ut ligula fermentum malesuada vel nec diam. Sed vel sem scelerisque, vehicula dolor non, pellentesque orci. Aliquam erat volutpat.
+            </TextBlock>
+            <Image Source = "resm:Avalonia.Skia.Assets.NoiseAsset_256X256_PNG.png?assembly=Avalonia.Skia" Height = "256" Width = "512" Stretch = "Fill" Margin = "6 0 6 0"> </Image>
+            <DockPanel Grid.Row="1" Grid.Column = "0" Margin = "0 5 0 0">
+                <TextBlock>Tags:</TextBlock>
+                <TextBlock DockPanel.Dock = "Left" Margin = "5 0 0 0">Tag 1</TextBlock>
+                <TextBlock Margin = "5 0 0 0">Tag 2</TextBlock>
+                <TextBlock Margin = "5 0 0 0">Tag 3</TextBlock>
+                <TextBlock Margin = "5 0 0 0">Tag 4</TextBlock>
+                <TextBlock DockPanel.Dock = "Right" TextAlignment="Right">4/5</TextBlock>
+                <TextBlock DockPanel.Dock = "Right" TextAlignment="Right" Margin = "0 0 10 0">Rate this article:</TextBlock>
+            </DockPanel>
+        </StackPanel> 
+        <StackPanel Grid.Row = "1" Grid.Column = "1" Orientation = "Vertical" Margin = "0 40 5 0">
+            <TextBlock TextWrapping="Wrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat tincidunt tincidunt. In aliquam sem quis tellus varius iaculis. Nunc egestas fermentum quam, in volutpat nunc tempus vel. Praesent dignissim diam vel imperdiet ultricies...</TextBlock>
+            <TextBlock TextAlignment="Right" TextDecorations="Underline" Margin = "0 0 5 0">More</TextBlock>
+            <TextBlock TextAlignment="Right" Margin = "0 5 5 0">Yesterday</TextBlock>
+            <TextBlock TextWrapping= "Wrap" Margin = "0 5 0 0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat tincidunt tincidunt. In aliquam sem quis tellus varius iaculis. Nunc egestas fermentum quam, in volutpat nunc tempus vel. Praesent dignissim diam vel imperdiet ultricies...</TextBlock>
+            <TextBlock TextAlignment="Right" TextDecorations="Underline" Margin = "0 0 5 0">More</TextBlock>
+            <TextBlock TextAlignment="Right" Margin = "0 5 5 0">1 week ago</TextBlock>
+        </StackPanel>
+    </Grid>
+    <!--<Design.DataContext>
+        <!- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) ->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/-->
+
+</Window>
